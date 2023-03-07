@@ -17,6 +17,15 @@ def isalnum(string):
 
 
 def correctness_test(filename):
+    # generate second file
+    with open(filename, 'r') as file:
+        ctr = 0
+        for line in file:
+            if ctr % 2 == 0:
+                pass#todo: finish this shit
+            ctr += 1
+
+    # compare files
     with open(filename, 'r') as file:
         for line in file:
             if line.isalnum() is not isalnum(line):
